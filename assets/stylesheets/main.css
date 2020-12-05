@@ -2,20 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy Light";
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
+  font-weight: 400;
   src: url("../fonts/Gilroy-Light.otf");
 }
 
 @font-face {
-  font-family: "Gilroy Extrabold";
+  font-family: "Gilroy";
+  font-weight: 800;
   src: url("../fonts/Gilroy-ExtraBold.otf");
 }
 
 body {
   background: black;
   color: white;
+  font-family: "Gilroy";
+}
+
+.text-regular {
+  font-weight: 400;
+}
+.text-bold {
+  font-weight: 800;
+}
+
+.container-samlovescoding {
+  width: 80%;
+  margin: 0 auto;
+  min-width: 1024px;
 }
