@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy Light";
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: "Gilroy Extrabold";
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+
+body {
+  background: black;
+  color: white;
+}
