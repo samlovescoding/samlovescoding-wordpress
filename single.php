@@ -1,12 +1,12 @@
 <?php
 /*
- * Blog List
+ * Single
  *
- * This page lists all blog posts in a single area.
+ * This page outputs a single blog post.
  *
  */
 get_header();
 get_component('navigation');
-get_component('blog');
+get_component('single');
 get_component('footer');
 get_footer();

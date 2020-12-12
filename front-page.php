@@ -2,6 +2,7 @@
 
 <?php get_component('navigation'); ?>
 <?php get_component('jumbotron'); ?>
+<?php get_component('blob-overlay'); ?>
 <?php get_component('blog'); ?>
 <?php get_component('portfolio'); ?>
 <?php get_component('invite'); ?>

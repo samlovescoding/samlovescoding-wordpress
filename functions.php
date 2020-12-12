@@ -4,14 +4,16 @@
 function load_stylesheets()
 {
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css');
+  wp_enqueue_style('aos', get_template_directory_uri() . '/assets/vendor/aos/aos.css');
   wp_enqueue_style('samlovescoding', get_template_directory_uri() . '/assets/stylesheets/main.css');
 }
 
 function load_scripts()
 {
   wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/vendor/jquery/jquery.min.js');
-  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.min.js');
-  wp_enqueue_script('samlovescoding', get_template_directory_uri() . '/assets/javascript/main.js');
+  wp_enqueue_script('aos', get_template_directory_uri() . '/assets/vendor/aos/aos.js');
+  wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.min.js', ['jquery']);
+  wp_enqueue_script('samlovescoding', get_template_directory_uri() . '/assets/javascript/main.js', ['jquery', 'aos']);
 }
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
